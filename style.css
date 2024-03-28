@@ -23,6 +23,7 @@ body {
     justify-content: center;
     gap: 5%;
     padding: 2% 0 2% 0;
+    background-color: var(--cor-segundaria);
 }
 
 .header__titulo {
