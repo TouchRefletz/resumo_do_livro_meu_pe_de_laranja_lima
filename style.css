@@ -8,7 +8,7 @@
 :root {
     --cor-primaria: #76ABAE;
     --cor-segundaria: #31363F;
-    --cor-hover: #222831;
+    --cor-terciaria: #222831;
     --cor-fundo: #EEEEEE;
     --fonte-primaria: "Chakra Petch", sans-serif;
     --fonte-segundaria: "Inter", sans-serif;
@@ -65,7 +65,7 @@ body {
     font-family: var(--fonte-primaria);
     text-align: center;
     font-size: 1.5rem;
-    color: var(--cor-hover);
+    color: var(--cor-terciaria);
 }
 
 .secao-capitulo {
@@ -104,26 +104,7 @@ body {
     gap: 5%;
 }
 
-.secao-capitulo-reverso__texto {
-    width: 50%;
-}
-
-.secao-capitulo-reverso__titulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 600;
-    font-size: 3rem;
-    color: var(--cor-primaria);
-    word-wrap: break-word;
-}
-
-.secao-capitulo-reverso__paragrafo {
-    font-family: var(--fonte-segundaria);
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--cor-segundaria);
-}
-
-.secao-capitulo-reverso__imagem {
+.secao-capitulo__imagem {
     width: 30%;
     height: 30%;
 }
@@ -138,34 +119,20 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .secao-capitulo {
+    .secao-capitulo .secao-capitulo-reverso {
         flex-direction: column-reverse;
     }
-    .secao-capitulo-reverso {
-        flex-direction: column-reverse;
-    }
-    .secao-capitulo-reverso__imagem {
+    .secao-capitulo__imagem {
         width: 80%;
     }
     .secao-capitulo__texto {
         width: 95%;
         text-align: center;
     }
-    .secao-capitulo-reverso__titulo {
-        padding: 5% 0 5% 0;
-    }
     .secao-capitulo__titulo {
         padding: 5% 0 5% 0;
     }
-    .secao-capitulo-reverso__texto {
-        width: 95%;
-        text-align: center;
-    }
-    .header {
-        text-align: center;
-        padding: 5%;
-    }
-    .secao-principal {
+    .header .secao-principal{
         text-align: center;
         padding: 5%;
     }
