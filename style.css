@@ -119,7 +119,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-    .secao-capitulo .secao-capitulo-reverso {
+    .secao-capitulo, .secao-capitulo-reverso {
         flex-direction: column-reverse;
     }
     .secao-capitulo__imagem {
@@ -132,7 +132,7 @@ body {
     .secao-capitulo__titulo {
         padding: 5% 0 5% 0;
     }
-    .header .secao-principal{
+    .header, .secao-principal{
         text-align: center;
         padding: 5%;
     }
