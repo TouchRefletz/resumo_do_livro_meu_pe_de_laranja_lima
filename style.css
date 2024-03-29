@@ -138,6 +138,7 @@
     bottom: 3%;
     right: 3%;
     z-index: 99;
+    opacity: 0.5;
     border: 1vh solid var(--cor-primaria);
     outline: none;
     cursor: pointer;
@@ -145,6 +146,7 @@
   }
 
 .seta {
+    opacity: 0.5;
     width: 4vh;
     width: 4vh;
 }
