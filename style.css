@@ -19,90 +19,104 @@ body {
     scroll-behavior: smooth;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%;
-    padding: 2% 0 2% 0;
-    background-color: var(--cor-segundaria);
-}
-
-.header-mobile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20%;
-    padding: 2% 0 2% 0;
-    background-color: var(--cor-segundaria);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-}
-
-.header__nav-mobile.active {
-    max-height: 1000px;
-}
-
-
-.header__titulo {
+.header__titulo, .header__nav__links__item-mobile__details__link, .header__nav__links__item-mobile, .header__nav__links__item, .sumarry-content, .secao-principal__titulo, .capitulo-nome, .capitulo-subtitulo, .secao-capitulo__titulo, .footer {
     font-family: var(--fonte-primaria);
-    font-weight: 900;
-    font-size: 2.5rem;
+}
+
+.header, .header-mobile, .header__nav__links, .header__nav__links-mobile, .header__nav__links__item-mobile__details, .secao-principal, .secao-capitulo, .secao-capitulo-reverso {
+    display: flex;
+}
+
+.header__titulo, .header__nav__links__item, .header__nav__links__item-mobile, .fa, .fa-bars, .secao-principal__titulo, .secao-capitulo__titulo, .footer {
     color: var(--cor-primaria);
 }
 
-.header__nav__links {
-    display: flex;
-    gap: 20%;
+.header, .header-mobile, .secao-principal, .secao-capitulo, .secao-capitulo-reverso {
+    align-items: center;
 }
 
-.header__nav-mobile {
+.header, .secao-capitulo, .secao-capitulo-reverso {
+    justify-content: center;
+}
+
+.header__titulo, .header__nav__links__item-mobile__details__link, .header__nav__links__item-mobile, .header__nav__links__item, .sumarry-content, .secao-principal__titulo {
+    font-weight: 900;
+}
+
+.header__nav__links-mobile, .capitulo-nome, .capitulo-subtitulo, .footer {
+    text-align: center;
+}
+
+.header__titulo, .secao-principal__titulo {
+    font-size: 2.5rem;
+}
+
+.header__nav-mobile, .header, .header-mobile, .footer {
     background-color: var(--cor-segundaria);   
 }
 
-.header__nav__links-mobile {
-    flex-direction: column;
-    text-align: center;
-    display: flex;
+.header, .header-mobile {
+    padding: 2% 0 2% 0;
 }
 
-.header__nav__links__item-mobile__details {
-    display: flex;
+.header__nav__links__item-mobile__details__link, .header__nav__links__item-mobile, .header__nav__links__item, .sumarry-content, .capitulo-nome, .secao-capitulo__titulo {
+    font-size: 3rem;
+}
+
+.header__nav__links, .header, .header-mobile {
+    gap: 20%;
+}
+
+.header__nav__links-mobile, .header__nav__links__item-mobile__details, .secao-principal {
     flex-direction: column;
+}
+
+.secao-principal__subtitulo, .secao-capitulo__paragrafo {
+    font-family: var(--fonte-segundaria);
+}
+
+.header__nav__links__item-mobile__details__link, .header__nav__links__item-mobile, .header__nav__links__item, .sumarry-content {
+    text-decoration: none;
 }
 
 .header__nav__links__item-mobile__details__link {
-    text-decoration: none;
-    font-size: 3rem;
     color: var(--cor-fundo);
-    font-family: var(--fonte-primaria);
-    font-weight: 900;
     padding: 3% 0 3% 0;
 }
 
+.header__nav__links__item, .secao-principal__subtitulo, .capitulo-subtitulo, .secao-capitulo__paragrafo, .footer {
+    font-size: 1.5rem;
+}
+
+.secao-principal__subtitulo, .secao-capitulo__titulo {
+    font-weight: 600;
+}
+
+.secao-principal__subtitulo, .secao-capitulo__paragrafo {
+    color: var(--cor-segundaria);
+}
+
+.fa, .fa-bars {
+    transform: scale(200%);
+}
+
+.secao-principal, .capitulo-nome {
+    padding: 5% 0 0 0;
+}
+
+.secao-capitulo, .secao-capitulo-reverso {
+    gap: 5%;
+}
+
+.header-mobile {
+    justify-content: space-between;
+}
+
 .sumarry-content {
-    text-decoration: none;
-    font-size: 3rem;
-    font-family: var(--fonte-primaria);
-    font-weight: 900;
     padding: 1% 0 1% 0;
 }
 
-.header__nav__links__item {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
-    font-weight: 900;
-}
-
 .header__nav__links__item-mobile {
-    text-decoration: none;
-    font-size: 3rem;
-    color: var(--cor-primaria);
-    font-family: var(--fonte-primaria);
-    font-weight: 900;
     margin: 1%;
 }
 
@@ -111,81 +125,28 @@ body {
     visibility: hidden;
 }
 
-.fa, .fa-bars {
-    transform: scale(200%);
-    color: var(--cor-primaria);
-}
-
-.secao-principal {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5% 0 0 0;
-}
-
-.secao-principal__titulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 900;
-    font-size: 2.5rem;
-    color: var(--cor-primaria);
-}
-
-.secao-principal__subtitulo {
-    font-family: var(--fonte-segundaria);
-    font-weight: 600;
-    font-size: 1.5rem;
-    color: var(--cor-segundaria);
-}
-
-.capitulo-nome {
-    font-family: var(--fonte-primaria);
-    text-align: center;
-    font-size: 3rem;
-    padding: 5% 0 0 0;
+.capitulo-nome, .secao-capitulo__titulo {
     word-wrap: break-word;
 }
 
 .capitulo-subtitulo {
-    font-family: var(--fonte-primaria);
-    text-align: center;
-    font-size: 1.5rem;
     color: var(--cor-terciaria);
 }
 
-.secao-capitulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.secao-capitulo, .secao-capitulo-reverso {
     padding: 10%;
-    gap: 5%;
 }
 
 .secao-capitulo__texto {
     width: 50%;
 }
 
-.secao-capitulo__titulo {
-    font-family: var(--fonte-primaria);
-    font-weight: 600;
-    font-size: 3rem;
-    color: var(--cor-primaria);
-    word-wrap: break-word;
-}
-
 .secao-capitulo__paragrafo {
-    font-family: var(--fonte-segundaria);
     font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--cor-segundaria);
 }
 
 .secao-capitulo-reverso {
-    display: flex;
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    padding: 10%;
-    gap: 5%;
 }
 
 .secao-capitulo__imagem {
@@ -194,11 +155,6 @@ body {
 }
 
 .footer {
-    background-color: var(--cor-segundaria);
-    font-family: var(--fonte-primaria);
-    color: var(--cor-primaria);
-    text-align: center;
-    font-size: 1.5rem;
     padding: 2%;
 }
 
@@ -209,15 +165,16 @@ body {
     .secao-capitulo__imagem {
         width: 80%;
     }
+    .secao-capitulo__texto, .header, .secao-principal {
+        text-align: center;
+    }
     .secao-capitulo__texto {
         width: 95%;
-        text-align: center;
     }
     .secao-capitulo__titulo {
         padding: 5% 0 5% 0;
     }
     .header, .secao-principal{
-        text-align: center;
         padding: 5%;
     }
     .capitulo-nome {

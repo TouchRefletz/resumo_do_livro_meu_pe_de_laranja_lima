@@ -119,4 +119,3 @@ function myFunction() {
         x.classList.add('disabled');
     }
 }
-
