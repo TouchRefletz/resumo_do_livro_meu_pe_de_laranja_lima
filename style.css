@@ -35,7 +35,15 @@ body {
     gap: 20%;
     padding: 2% 0 2% 0;
     background-color: var(--cor-segundaria);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
 }
+
+.header__nav-mobile.active {
+    max-height: 1000px;
+}
+
 
 .header__titulo {
     font-family: var(--fonte-primaria);
@@ -50,8 +58,7 @@ body {
 }
 
 .header__nav-mobile {
-    background-color: var(--cor-segundaria);  
-    padding: 0 0 3% 0;  
+    background-color: var(--cor-segundaria);   
 }
 
 .header__nav__links-mobile {
@@ -71,7 +78,7 @@ body {
     color: var(--cor-fundo);
     font-family: var(--fonte-primaria);
     font-weight: 900;
-    padding: 1% 0 1% 0;
+    padding: 3% 0 3% 0;
 }
 
 .sumarry-content {

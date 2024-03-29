@@ -2,6 +2,7 @@ var nav = document.querySelector('.header__nav');
 var header = document.querySelector('.header');
 var icon = document.querySelector('.icon');
 var header_principal = document.querySelector(".header__nav-mobile");
+var detalhes = document.querySelector(".header__nav__links__item-mobile");
 var header_mobile = document.querySelector(".header__nav__links-mobile");
 var details = document.querySelector('.header__nav__links__item-mobile__details');
 var details_text = document.querySelectorAll('.header__nav__links__item-mobile__details__link');
@@ -16,31 +17,31 @@ function atualizarLarguraTela() {
         header_mobile.innerHTML = '<details class="header__nav__links__item-mobile">' +
     '<summary><a class="sumarry-content">Indice</a></summary>' +
     '<ul>' +
-        '<li><details class="header__nav__links__item-mobile">' +
+        '<details class="header__nav__links__item-mobile">' +
             '<summary><a class="sumarry-content">Primeira parte</a></summary>' +
             '<ul class="header__nav__links__item-mobile__details">' +
-                '<li><a href="#o-descobridor-de-coisas" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O descobridor de coisas</a></li>' +
-                '<li><a href="#um-certo-pe-de-laranja-lima" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Um certo pé de laranja lima</a></li>' +
-                '<li><a href="#os-dedos-magros-da-pobreza" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Os dedos magros da pobreza</a></li>' +
-                '<li><a href="#o-passarinho-a-escola-e-a-flor" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O passarinho, a escola e a flor</a></li>' +
-                '<li><a href="#numa-cadeia-eu-hei-de-ver-te-morrer" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">"Numa cadeia eu hei de ver-te morrer"</a></li>' +
+                '<a href="#o-descobridor-de-coisas" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O descobridor de coisas</a></li>' +
+                '<a href="#um-certo-pe-de-laranja-lima" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Um certo pé de laranja lima</a></li>' +
+                '<a href="#os-dedos-magros-da-pobreza" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Os dedos magros da pobreza</a></li>' +
+                '<a href="#o-passarinho-a-escola-e-a-flor" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O passarinho, a escola e a flor</a></li>' +
+                '<a href="#numa-cadeia-eu-hei-de-ver-te-morrer" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">"Numa cadeia eu hei de ver-te morrer"</a></li>' +
             '</ul>' +
         '</details></li>' +
-        '<li><details class="header__nav__links__item-mobile">' +
+        '<details class="header__nav__links__item-mobile">' +
             '<summary><a class="sumarry-content">Segunda parte</a></summary>' +
             '<ul class="header__nav__links__item-mobile__details">' +
-                '<li><a href="#o-morcego" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O morcego</a></li>' +
-                '<li><a href="#a-conquista" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">A conquista</a></li>' +
-                '<li><a href="#conversas-para-la-e-para-ca" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Conversa para lá e para cá</a></li>' +
-                '<li><a href="#duas-surras-memoraveis" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Duas surras memoráveis</a></li>' +
-                '<li><a href="#suave-e-estranho-pedido" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Suave e estranho pedido</a></li>' +
-                '<li><a href="#de-pedaco-em-pedaco-e-que-se-faz-ternura" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">De pedaço em pedaço é que se faz ternura</a></li>' +
-                '<li><a href="#o-mangaratiba" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O mangaratiba</a></li>' +
-                '<li><a href="#tantas-sao-as-velhas-arvores" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Tantas são as velhas árvores</a></li>' +
-                '<li><a href="#a-confissao-final" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">A confissão final</a></li>' +
+                '<a href="#o-morcego" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O morcego</a></li>' +
+                '<a href="#a-conquista" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">A conquista</a></li>' +
+                '<a href="#conversas-para-la-e-para-ca" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Conversa para lá e para cá</a></li>' +
+                '<a href="#duas-surras-memoraveis" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Duas surras memoráveis</a></li>' +
+                '<a href="#suave-e-estranho-pedido" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Suave e estranho pedido</a></li>' +
+                '<a href="#de-pedaco-em-pedaco-e-que-se-faz-ternura" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">De pedaço em pedaço é que se faz ternura</a></li>' +
+                '<a href="#o-mangaratiba" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">O mangaratiba</a></li>' +
+                '<a href="#tantas-sao-as-velhas-arvores" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">Tantas são as velhas árvores</a></li>' +
+                '<a href="#a-confissao-final" onclick="myFunction()" class="header__nav__links__item-mobile__details__link">A confissão final</a></li>' +
             '</ul>' +
         '</details></li>' +
-        '<li><a class="header__nav__links__item-mobile" href="#conclusao">Conclusão</a></li>' +
+        '<a class="header__nav__links__item-mobile" href="#conclusao">Conclusão</a></li>' +
     '</ul>' +
 '</details>' +
 '<a class="header__nav__links__item-mobile" id="participantes" href="#footer">Participantes</a>';
@@ -96,7 +97,10 @@ function atualizarLarguraTela() {
         nav.classList.remove('disabled');
         header.style.justifyContent = 'center';
         header_mobile.style.justifyContent = 'center';
-        header_principal.style.padding = '0 0 1% 0';
+        var detalhes = document.querySelectorAll(".header__nav__links__item-mobile");
+        detalhes.forEach(function(element) {
+            element.style.width = '20%';
+        });
         icon.classList.add('disabled');
         header_mobile.style.flexDirection = 'row';
         details.style.flexDirection = 'row';
@@ -107,10 +111,12 @@ function atualizarLarguraTela() {
 }
 function myFunction() {
     var x = document.querySelector('.header__nav-mobile');
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    if (!x.classList.contains('active')) {
+        x.classList.add('active');
+        x.classList.remove('disabled');
     } else {
-      x.style.display = "block";
-      x.classList.remove('disabled');
+        x.classList.remove('active');
+        x.classList.add('disabled');
     }
-  }
+}
+
