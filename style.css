@@ -14,10 +14,9 @@
     --fonte-segundaria: "Inter", sans-serif;
 }
 
-body {
-    background-color: var(--cor-fundo);
-    scroll-behavior: smooth;
-}
+.botao, .disabled {
+    display: none;
+  }
 
 .header__titulo, .header__nav__links__item-mobile__details__link, .header__nav__links__item-mobile, .header__nav__links__item, .sumarry-content, .secao-principal__titulo, .capitulo-nome, .capitulo-subtitulo, .secao-capitulo__titulo, .footer {
     font-family: var(--fonte-primaria);
@@ -27,7 +26,7 @@ body {
     display: flex;
 }
 
-.header__titulo, .header__nav__links__item, .header__nav__links__item-mobile, .fa, .fa-bars, .secao-principal__titulo, .secao-capitulo__titulo, .footer {
+.header__titulo, .header__nav__links__item, .header__nav__links__item-mobile, .fa, .fa-bars, .secao-principal__titulo, .secao-capitulo__titulo, .footer, .botao {
     color: var(--cor-primaria);
 }
 
@@ -51,7 +50,7 @@ body {
     font-size: 2.5rem;
 }
 
-.header__nav-mobile, .header, .header-mobile, .footer {
+.header__nav-mobile, .header, .header-mobile, .footer, .botao {
     background-color: var(--cor-segundaria);   
 }
 
@@ -108,6 +107,53 @@ body {
     gap: 5%;
 }
 
+.capitulo-nome, .secao-capitulo__titulo {
+    word-wrap: break-word;
+}
+
+.secao-capitulo, .secao-capitulo-reverso {
+    padding: 10%;
+}
+
+.secao-capitulo__imagem {
+    border-radius: 2%;
+}
+
+.footer {
+    padding: 2%;
+}
+
+.capitulo-subtitulo {
+    color: var(--cor-terciaria);
+}
+
+.botao:hover {
+    background-color: var(--cor-terciaria);
+}
+
+.botao {
+    width: 10vh;
+    height: 10vh;
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 99;
+    border: 1vh solid var(--cor-primaria);
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;    
+  }
+
+.seta {
+    width: 4vh;
+    width: 4vh;
+}
+  
+body {
+    background-color: var(--cor-fundo);
+    scroll-behavior: smooth;
+}
+
 .header-mobile {
     justify-content: space-between;
 }
@@ -125,18 +171,6 @@ body {
     visibility: hidden;
 }
 
-.capitulo-nome, .secao-capitulo__titulo {
-    word-wrap: break-word;
-}
-
-.capitulo-subtitulo {
-    color: var(--cor-terciaria);
-}
-
-.secao-capitulo, .secao-capitulo-reverso {
-    padding: 10%;
-}
-
 .secao-capitulo__texto {
     width: 50%;
 }
@@ -152,10 +186,6 @@ body {
 .secao-capitulo__imagem {
     width: 30%;
     height: 30%;
-}
-
-.footer {
-    padding: 2%;
 }
 
 @media (max-width: 1200px) {
